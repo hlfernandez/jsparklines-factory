@@ -1,7 +1,7 @@
 JSparklines Factory [![license](https://img.shields.io/badge/LICENSE-GPLv3-blue.svg)]()
 ========================
 
-A project that eases the creation of [JSparkLines](https://github.com/compomics/jsparklines) renderers. 
+A project that eases the creation of [JSparklines](https://github.com/compomics/jsparklines) renderers. 
 
 Please, note that currently only `JSparklinesBarChartTableCellRenderer` has support in this project.
 
@@ -58,6 +58,6 @@ Clone this project and install it using `mvn install` or add the following repos
 
 Examples
 --------
-Two demo clases (`JSparklinesBarChartTableCellRendererBuilderDemo` and `JSparklinesBarChartTableCellRendererFactoryDemo`) are provided within different examples that configure the a table as shown in the following image.
+Two demo clases (`JSparklinesBarChartTableCellRendererBuilderDemo` and `JSparklinesBarChartTableCellRendererFactoryDemo`) are provided within different examples that configure a table as shown in the following image.
 
 ![JSparklines demo](screenshots/jsparklines-demo.png)
