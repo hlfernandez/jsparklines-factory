@@ -10,7 +10,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<jsparklines.version>1.0.8</jsparklines.version>
+		<jsparklines.version>1.0.9</jsparklines.version>
 	</properties>
 
 	<distributionManagement>

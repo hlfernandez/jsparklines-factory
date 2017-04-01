@@ -43,8 +43,7 @@ public class JSparklinesBarChartTableCellRendererBuilderFactory {
 
 	public static MaximumMinimumColoredBarChartRendererBuilder newMaximumMinimumColoredBarChartRenderer(
 		JTable table, int column
-		) {
+	) {
 		return new MaximumMinimumColoredBarChartRendererBuilder(table, column);
 	}	
 }
-
