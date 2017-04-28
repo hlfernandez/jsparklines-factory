@@ -13,12 +13,12 @@ import no.uib.jsparklines.data.XYDataPoint;
 public class TableUtils {
 	public static Double getMaxColumnValue(JTable table, int col) {
 		return getColumnDoubleValues(table, col).stream().mapToDouble(d -> d)
-			.max().getAsDouble();
+			.max().orElse(Double.NaN);
 	}
 
 	public static Double getMinColumnValue(JTable table, int col) {
 		return getColumnDoubleValues(table, col).stream().mapToDouble(d -> d)
-			.min().getAsDouble();
+			.min().orElse(Double.NaN);
 	}
 
 	private static List<Double> getColumnDoubleValues(JTable table, int col) {
