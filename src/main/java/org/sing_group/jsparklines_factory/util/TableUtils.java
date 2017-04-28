@@ -27,13 +27,21 @@ public class TableUtils {
 		List<Object> columnValues = getColumnValues(tableModel, col);
 		return columnValues.stream().map(TableUtils::toDouble).collect(toList());
 	}
-	
+
 	private static void requireNumberclass(Class<?> columnClass) {
 		if (!Number.class.isAssignableFrom(columnClass)	&&
-			!XYDataPoint.class.isAssignableFrom(columnClass)
+			!XYDataPoint.class.isAssignableFrom(columnClass) &&
+			!isPrimitiveNumeric(columnClass)
 		) {
 			throw new IllegalStateException("Numeric or XYDataPoint column required");
 		}
+	}
+
+	private static boolean isPrimitiveNumeric(Class<?> columnClass) {
+		return double.class.isAssignableFrom(columnClass)
+			|| float.class.isAssignableFrom(columnClass)
+			|| int.class.isAssignableFrom(columnClass)
+			|| long.class.isAssignableFrom(columnClass);
 	}
 
 	public static Double toDouble(Object value) {
