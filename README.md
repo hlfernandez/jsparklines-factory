@@ -51,7 +51,7 @@ Clone this project and install it using `mvn install` or add the following repos
     	<dependency>
 			<groupId>org.sing_group</groupId>
 			<artifactId>jsparklines-factory</artifactId>
-			<version>0.1.0-SNAPSHOT</version>
+			<version>0.1.0</version>
 		</dependency>
 	</dependencies>
 ```
