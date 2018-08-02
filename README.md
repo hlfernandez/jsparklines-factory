@@ -1,3 +1,5 @@
+> ### **Note**: this project has been moved to the [GC4S](https://github.com/sing-group/GC4S/tree/master/gc4s-jsparklines-factory) project.
+
 JSparklines Factory [![license](https://img.shields.io/badge/LICENSE-GPLv3-blue.svg)]()
 ========================
 
